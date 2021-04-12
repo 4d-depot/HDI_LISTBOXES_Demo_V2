@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="10">
+	<com.4d>
+		<interface>
+			<misc/>
+			<shortcuts>
+				<add_subform command="false" key_code="3" shift="false"/>
+				<cancel_input_form alt="true" key_code="27"/>
+				<accept_input_form alt="true" key_code="3"/>                                                                                                                              </shortcuts>
+			<user default_user="0" print_progress="false" splash_screen="false" formula_editor_with_full_lists="true"/>
+			<developper allow_read_only_structure="true" design_acces="0"/>                                                                                                                            </interface>
+		<general startup_environnement="1">
+			<mover forms="1" always_display_dialog="2"/>                                  </general>
+		<database>
+			<misc automatic_transactions="false" standard_xpath="false"/>
+			<cache size_maximum="100" size_reserved="128" size_fixed="32"/>                                                                </database>
+		<compiler>
+			<options compilation_path="3" fat_binary="true" symbol_file="true"/>
+			<typage default_for_button="1" default_for_numeric="1"/>                                                                </compiler>
+		<sql>
+			<publication port_number="1919"/>
+			<access data_read_only="0"/>                                                                </sql>
+		<server>
+			<network>
+				<client_server auto_register_clients="true" use_encryption="false"/>
+				<options publication_name="4D_Objects" use_legacy_network_layer="true"/>                                              </network>
+			<misc/>                                                    </server>
+		<web>
+			<standalone_server>
+				<misc use_4dvar_comments="true"/>
+				<options>
+					<web_processes max_concurrent="32000" timeout_for_inactives="18000"/>
+					<cache cache_max_size="0" use_4d_web_cache="false"/>
+					<web_passwords generic_web_user="0"/>                                                                                                            </options>
+				<configuration ip_address="0" listening_address="::">
+					<hosts>
+						<host id="0" name="Default" html_root="./DossierWeb/" home_page="index.html"/>                                                                      </hosts>                                                          </configuration>
+				<log tokens="">
+					<backup daily="" hourly="" mode="0" monthly="" size="0" weekly=""/>                                                          </log>
+				<webservices allow_requests="false" wizard_method_prefix="">
+					<server allow_requests="false"/>
+				</webservices>                                                                                                                                                                                                              </standalone_server>
+			<remote>
+				<options>
+					<web_processes timeout_for_inactives="18000"/>
+					<cache cache_max_size="524288" use_4d_web_cache="false"/>
+					<web_passwords generic_web_user="1"/>                                                                                                                                                              </options>
+				<configuration allow_ssl="false" ip_address="0"/>
+				<webservices allow_requests="false" wizard_method_prefix=""/>                                                                                                                              </remote>                                                                </web>
+		<deployment>
+			<options/>
+		</deployment>                                                                                                                                              </com.4d>          </preferences>

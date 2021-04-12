@@ -1,0 +1,140 @@
+﻿{
+	"Colors": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "Jaune",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Bleu",
+				"ref": 2,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Orange",
+				"ref": 3,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Vert",
+				"ref": 4,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Mauve",
+				"ref": 5,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Blanc",
+				"ref": 6,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Noir",
+				"ref": 7,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Gris",
+				"ref": 8,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Beige",
+				"ref": 9,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Rouge",
+				"ref": 10,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"Shapes": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "Carré",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Cercle",
+				"ref": 2,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Triangle",
+				"ref": 3,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Pentagone",
+				"ref": 4,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Hexagone",
+				"ref": 5,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"Material": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "Plastique",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Verre",
+				"ref": 2,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Bois",
+				"ref": 3,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Acier",
+				"ref": 4,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Cuivre",
+				"ref": 5,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	}
+}

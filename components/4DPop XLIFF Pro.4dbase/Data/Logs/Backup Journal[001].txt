@@ -1,0 +1,10 @@
+*** Full Backup
+Creating archive : BACK250:BACKUPS:MAIN:4DPop XLIFF Pro[0002].4BK
+Attachment(s): 
+	Macintosh HD:Users:vdl:Desktop:4DPop XLIFF Pro:Common.xlf [NOT FOUND]
+	Macintosh HD:Users:vdl:Desktop:4DPop XLIFF Pro:Preferences: [OK]
+	Macintosh HD:Users:vdl:Desktop:4DPop XLIFF Pro:Resources: [OK]
+Scheduled 10/10/2019 18:00
+Starting 10/10/2019 18:00
+Ending 10/10/2019 18:00
+

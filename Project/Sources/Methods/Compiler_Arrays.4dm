@@ -1,0 +1,10 @@
+//%attributes = {"invisible":true}
+ARRAY BOOLEAN:C223(C1C2C3; 0)
+ARRAY BOOLEAN:C223(HeightDemoLockCols; 0)
+ARRAY REAL:C219(LB_DescriptionColumn1; 0)
+ARRAY LONGINT:C221(LB_DescriptionColumn2; 0)
+ARRAY BOOLEAN:C223(List Box1; 0)
+ARRAY BOOLEAN:C223(StyledArtistAlbumsTracks; 0)
+ARRAY BOOLEAN:C223(StylesAlbumsArtists; 0)
+ARRAY TEXT:C222(TC2; 0)
+ARRAY TEXT:C222(TC3; 0)

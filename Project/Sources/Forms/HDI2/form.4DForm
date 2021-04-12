@@ -1,0 +1,3904 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 920,
+	"windowMinHeight": 600,
+	"width": 920,
+	"height": 620,
+	"menuBar": "MainBar",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload",
+		"onTimer",
+		"onSelectionChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"BottomInfos2": {
+					"type": "groupBox",
+					"top": 460,
+					"left": 20,
+					"width": 881,
+					"height": 140,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"class": "OS_StyleSmall",
+					"text": ":xliff:Page0_Informations"
+				},
+				"Zone de groupe2": {
+					"type": "groupBox",
+					"top": 10,
+					"left": 20,
+					"width": 220,
+					"height": 440,
+					"sizingY": "grow",
+					"class": "OS_StyleSmall",
+					"text": ":xliff:Page0_Function"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 602,
+					"left": 786,
+					"width": 114,
+					"height": 13,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.currentPage",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "OS_StyleSmall",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "Page : ##0",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BottomInfos1": {
+					"type": "input",
+					"top": 483,
+					"left": 36,
+					"width": 848,
+					"height": 110,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.info",
+					"stroke": "#000000",
+					"class": "Default",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LB_Functions": {
+					"type": "listbox",
+					"top": 36,
+					"left": 30,
+					"width": 199,
+					"height": 404,
+					"resizingMode": "legacy",
+					"dataSource": "Form:C1466.functions",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"showHeaders": false,
+					"headerHeight": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "transparent",
+					"textAlign": "left",
+					"verticalAlign": "middle",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/LB_Functions.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"currentItemSource": "",
+					"currentItemPositionSource": "Form:C1466.functionIndex",
+					"columns": [
+						{
+							"name": "Column2",
+							"width": 199,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header50",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"textAlign": "left",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer28",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "left",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"dataSource": "This:C1470.value"
+						}
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable1",
+				"BottomInfos1",
+				"LB_Functions"
+			]
+		},
+		{
+			"objects": {
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 10,
+					"left": 260,
+					"width": 200,
+					"height": 80,
+					"class": "OS_StyleSmall",
+					"text": ":xliff:Headers"
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 95,
+					"left": 260,
+					"width": 200,
+					"height": 110,
+					"class": "OS_StyleSmall",
+					"text": ":xliff:Rows"
+				},
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 350,
+					"left": 260,
+					"width": 200,
+					"height": 100,
+					"class": "OS_StyleSmall",
+					"text": ":xliff:Footers"
+				},
+				"LB_Description": {
+					"type": "listbox",
+					"top": 20,
+					"left": 480,
+					"width": 420,
+					"height": 430,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "List Box1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showFooters": true,
+					"textAlign": "left",
+					"verticalAlign": "top",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"headerHeight": "21px",
+					"footerHeight": "30px",
+					"scrollbarHorizontal": "hidden",
+					"columns": [
+						{
+							"name": "LB_DescriptionColumn1",
+							"dataSource": "LB_DescriptionColumn1",
+							"dataSourceTypeHint": "number",
+							"width": 200,
+							"minWidth": 100,
+							"maxWidth": 32000,
+							"numberFormat": "|Numerics",
+							"textAlign": "right",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_DescriptionHeader1",
+								"text": ":xliff:Header1",
+								"dataSource": "Header25",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_DescriptionFooter1",
+								"dataSource": "LB_DescriptionFooter1",
+								"variableCalculation": "sum",
+								"numberFormat": "|Numerics",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "LB_DescriptionColumn2",
+							"dataSource": "LB_DescriptionColumn2",
+							"dataSourceTypeHint": "time",
+							"width": 206,
+							"minWidth": 100,
+							"maxWidth": 32000,
+							"textAlign": "right",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_DescriptionHeader2",
+								"text": ":xliff:Header2",
+								"dataSource": "Header26",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_DescriptionFooter2",
+								"dataSource": "LB_DescriptionFooter2",
+								"variableCalculation": "sum",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"CB1": {
+					"type": "checkbox",
+					"top": 35,
+					"left": 275,
+					"width": 180,
+					"height": 20,
+					"dataSource": "CB1",
+					"text": ":xliff:HideHeaders",
+					"class": "Default",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/CB1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CB2": {
+					"type": "checkbox",
+					"top": 375,
+					"left": 275,
+					"width": 150,
+					"height": 20,
+					"dataSource": "CB2",
+					"text": ":xliff:HideFooters",
+					"class": "Default",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/CB2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle0": {
+					"type": "rectangle",
+					"top": 59,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"fill": "#FF6600"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"fill": "#FF6600"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 147,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"fill": "#FF6600"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 171,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"fill": "#FF6600"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 397,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"fill": "#FF6600"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 422,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"fill": "#FF6600"
+				},
+				"3D Button6": {
+					"type": "button",
+					"top": 59,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"dataSource": "3D Button",
+					"display": false,
+					"method": "ObjectMethods/3D Button6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"3D Button7": {
+					"type": "button",
+					"top": 123,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"dataSource": "3D Button",
+					"display": false,
+					"method": "ObjectMethods/3D Button7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"3D Button8": {
+					"type": "button",
+					"top": 147,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"dataSource": "3D Button",
+					"display": false,
+					"method": "ObjectMethods/3D Button8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"3D Button9": {
+					"type": "button",
+					"top": 171,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"dataSource": "3D Button",
+					"display": false,
+					"method": "ObjectMethods/3D Button9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"3D Button10": {
+					"type": "button",
+					"top": 397,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"dataSource": "3D Button",
+					"display": false,
+					"method": "ObjectMethods/3D Button10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"3D Button11": {
+					"type": "button",
+					"top": 422,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"dataSource": "3D Button",
+					"display": false,
+					"method": "ObjectMethods/3D Button11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 60,
+					"left": 275,
+					"width": 150,
+					"height": 16,
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:TextColorColon"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 148,
+					"left": 275,
+					"width": 150,
+					"height": 17,
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:BackgroundColorColon"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 173,
+					"left": 275,
+					"width": 150,
+					"height": 17,
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:AltBackgndColorColon"
+				},
+				"Group Box5": {
+					"type": "groupBox",
+					"top": 210,
+					"left": 260,
+					"width": 200,
+					"height": 135,
+					"class": "OS_StyleSmall",
+					"text": ":xliff:GridAndScrollbars"
+				},
+				"CB3": {
+					"type": "checkbox",
+					"top": 237,
+					"left": 275,
+					"width": 146,
+					"height": 20,
+					"dataSource": "GridHideH",
+					"text": ":xliff:HideHorGrid",
+					"class": "Default",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/CB3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CB4": {
+					"type": "checkbox",
+					"top": 263,
+					"left": 275,
+					"width": 146,
+					"height": 20,
+					"dataSource": "GridHideV",
+					"text": ":xliff:HideVertGrid",
+					"class": "Default",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/CB4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CB5": {
+					"type": "checkbox",
+					"top": 289,
+					"left": 275,
+					"width": 176,
+					"height": 20,
+					"dataSource": "ScrollHideH",
+					"text": ":xliff:HideHorScroll",
+					"class": "Default",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/CB5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CB6": {
+					"type": "checkbox",
+					"top": 315,
+					"left": 275,
+					"width": 176,
+					"height": 20,
+					"dataSource": "ScrollHideV",
+					"text": ":xliff:HideVertScroll",
+					"class": "Default",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/CB6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 239,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"fill": "#C0C0C0"
+				},
+				"3D Button1": {
+					"type": "button",
+					"top": 239,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"dataSource": "3D Button",
+					"display": false,
+					"method": "ObjectMethods/3D Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 669,
+					"left": 260,
+					"width": 150,
+					"height": 16,
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:GridColorColon"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 123,
+					"left": 275,
+					"width": 150,
+					"height": 17,
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:TextColorColon"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 423,
+					"left": 275,
+					"width": 150,
+					"height": 16,
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:BackgroundColorColon"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 399,
+					"left": 275,
+					"width": 150,
+					"height": 16,
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:TextColorColon"
+				},
+				"Hierarchical List": {
+					"type": "list",
+					"top": 189,
+					"left": 1006,
+					"width": 92,
+					"height": 195,
+					"dataSource": "Hierarchical List",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Hierarchical List.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 265,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"fill": "#C0C0C0"
+				},
+				"3D Button2": {
+					"type": "button",
+					"top": 265,
+					"left": 430,
+					"width": 16,
+					"height": 16,
+					"dataSource": "3D Button",
+					"display": false,
+					"method": "ObjectMethods/3D Button2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 12,
+					"left": 260,
+					"width": 640,
+					"height": 438,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "TC2",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						":xliff:Arrays",
+						":xliff:Records"
+					],
+					"class": "OS_Style",
+					"method": "ObjectMethods/Tab Control.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"LB_ModeArray": {
+					"type": "listbox",
+					"top": 100,
+					"left": 290,
+					"width": 590,
+					"height": 240,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "List Box1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"headerHeight": "21px",
+					"showHeaders": true,
+					"columns": [
+						{
+							"name": "ArrayModeArtists",
+							"dataSource": "<>_Artists",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 160,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"header": {
+								"name": "Header26",
+								"text": ":xliff:Artists",
+								"dataSource": "HH1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer1a1",
+								"dataSource": "<>Footer1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "ArrayModeAlbums",
+							"dataSource": "<>_Albums",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 160,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"header": {
+								"name": "Header29",
+								"text": ":xliff:Albums",
+								"dataSource": "HH2",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer1b1",
+								"dataSource": "<>Footer1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "ArrayModeTracks",
+							"dataSource": "<>_Tracks",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 160,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"header": {
+								"name": "Header30",
+								"text": ":xliff:Tracks",
+								"dataSource": "HH3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer2",
+								"dataSource": "<>Footer2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "ArrayModeDurations",
+							"dataSource": "<>_TracksDurations",
+							"dataSourceTypeHint": "time",
+							"width": 96,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"timeFormat": "mm_ss",
+							"textAlign": "right",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header34",
+								"text": ":xliff:Durations",
+								"dataSource": "HH4",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "TimeFooter1",
+								"dataSource": "<>TimeFooter",
+								"variableCalculation": "average",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 350,
+					"left": 290,
+					"width": 590,
+					"height": 96,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.infoSuite",
+					"stroke": "#000000",
+					"class": "OS_Style",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LB_ModeSelection": {
+					"type": "listbox",
+					"top": 100,
+					"left": 290,
+					"width": 590,
+					"height": 240,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "List Box2",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"table": 5,
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"verticalAlign": "top",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"headerHeight": "21px",
+					"columns": [
+						{
+							"name": "SelectionModeArtists",
+							"dataSource": "[artists:3]name:2+\" / \"+[albums:4]name:2+\" / \"+[tracks:5]name:1",
+							"width": 480,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "left",
+							"verticalAlign": "top",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header33",
+								"text": ":xliff:ArtistsAlbumsTracks",
+								"dataSource": "Header29",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer17",
+								"dataSource": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"textAlign": "left",
+								"verticalAlign": "top",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "SelectionModeDurations",
+							"dataSource": "[tracks:5]duration:10",
+							"dataSourceTypeHint": "time",
+							"width": 96,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"timeFormat": "mm_ss",
+							"textAlign": "right",
+							"verticalAlign": "top",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": ":xliff:Durations",
+								"dataSource": "Header30",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer18",
+								"dataSource": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"textAlign": "left",
+								"verticalAlign": "top",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"LB_ModeArray_Arrow": {
+					"type": "picture",
+					"top": 34,
+					"left": 320,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"sizingX": "fixed"
+				},
+				"LB_ModeArray_text": {
+					"type": "text",
+					"text": ":xliff:ListboxArrays",
+					"top": 60,
+					"left": 360,
+					"width": 211,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "bold"
+				},
+				"LB_ModeSelection_Arrow": {
+					"type": "picture",
+					"top": 34,
+					"left": 680,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomRight.png",
+					"sizingX": "fixed",
+					"visibility": "hidden"
+				},
+				"LB_ModeSelection_text": {
+					"type": "text",
+					"text": ":xliff:ListboxSelection",
+					"top": 60,
+					"left": 442,
+					"width": 261,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"visibility": "hidden"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Tab Control1": {
+					"type": "tab",
+					"top": 12,
+					"left": 260,
+					"width": 640,
+					"height": 438,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "TC3",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"sync",
+						"hier"
+					],
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Tab Control1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"LB_Hierachical": {
+					"type": "listbox",
+					"top": 100,
+					"left": 290,
+					"width": 590,
+					"height": 320,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "StylesAlbumsArtists",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onExpand",
+						"onCollapse"
+					],
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"columns": [
+						{
+							"name": "Hcol1",
+							"dataSource": "<>_Artists",
+							"width": 160,
+							"minWidth": 50,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HierarchicalHeader",
+								"text": ":xliff:Artists",
+								"dataSource": "Header1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "9",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Hcol2",
+							"dataSource": "<>_Albums",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header35",
+								"text": ":xliff:Albums",
+								"dataSource": "Header35",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer3",
+								"dataSource": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Hcol3",
+							"dataSource": "<>_Tracks",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header36",
+								"text": ":xliff:Tracks",
+								"dataSource": "Header36",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer4",
+								"dataSource": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Hcol4",
+							"dataSource": "<>_TracksDurations",
+							"dataSourceTypeHint": "time",
+							"width": 100,
+							"minWidth": 50,
+							"maxWidth": 10000,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header37",
+								"text": ":xliff:Durations",
+								"dataSource": "Header37",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer5",
+								"dataSource": "Footer5",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Text28": {
+					"type": "text",
+					"text": ":xliff:MandatoryForHierachical",
+					"top": 60,
+					"left": 639,
+					"width": 241,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "normal",
+					"sizingY": "fixed"
+				},
+				"LB_ModeArray_Arrow2": {
+					"type": "picture",
+					"top": 34,
+					"left": 320,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"sizingX": "fixed"
+				},
+				"LB_ModeArray_text1": {
+					"type": "text",
+					"text": ":xliff:ListboxArrays",
+					"top": 60,
+					"left": 360,
+					"width": 211,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "bold"
+				}
+			}
+		},
+		{
+			"objects": {
+				"ListboxDemoFooters1": {
+					"type": "listbox",
+					"top": 100,
+					"left": 260,
+					"width": 640,
+					"height": 290,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showFooters": true,
+					"footerHeight": "30px",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/ListboxDemoFooters1.4dm",
+					"events": [
+						"onHeaderClick",
+						"onFooterClick"
+					],
+					"headerHeight": "21px",
+					"scrollbarHorizontal": "hidden",
+					"columns": [
+						{
+							"name": "Artists",
+							"dataSource": "<>_Artists",
+							"width": 240,
+							"minWidth": 240,
+							"maxWidth": 240,
+							"textFormat": "  #############################################",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"method": "ObjectMethods/Artists.4dm",
+							"header": {
+								"name": "Header1",
+								"text": ":xliff:Artists",
+								"dataSource": "Header1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "dummy2",
+								"dataSource": "<>Footer1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Albums",
+							"dataSource": "<>_Albums",
+							"width": 240,
+							"minWidth": 240,
+							"maxWidth": 240,
+							"textFormat": "  #############################################",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"method": "ObjectMethods/Albums.4dm",
+							"header": {
+								"name": "Header25",
+								"text": ":xliff:Albums",
+								"dataSource": "Header1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "dummy1",
+								"dataSource": "<>Footer1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"visibility": "hidden"
+						},
+						{
+							"name": "Tracks",
+							"dataSource": "<>_Tracks",
+							"width": 240,
+							"minWidth": 240,
+							"maxWidth": 240,
+							"textFormat": "  #############################################",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"method": "ObjectMethods/Tracks.4dm",
+							"header": {
+								"name": "Header14",
+								"text": ":xliff:Tracks",
+								"dataSource": "Header3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "dummy",
+								"dataSource": "<>Footer2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Durations",
+							"dataSource": "<>_TracksDurations",
+							"dataSourceTypeHint": "time",
+							"width": 146,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"timeFormat": "mm_ss",
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header32",
+								"text": ":xliff:Durations",
+								"dataSource": "Header4",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "TimeFooter",
+								"dataSource": "<>TimeFooter",
+								"variableCalculation": "average",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 410,
+					"left": 353,
+					"width": 220,
+					"height": 32,
+					"sizingY": "move",
+					"class": "Default",
+					"text": ":xliff:ClicColumnsChange",
+					"fontWeight": "bold",
+					"textAlign": "left"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 410,
+					"left": 727,
+					"width": 170,
+					"height": 32,
+					"sizingY": "move",
+					"class": "Default",
+					"text": ":xliff:ClicColumnsCalculation",
+					"fontWeight": "bold",
+					"textAlign": "right"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 54,
+					"left": 345,
+					"width": 320,
+					"height": 16,
+					"class": "Default",
+					"textAlign": "center",
+					"text": ":xliff:ClicColumnsSort",
+					"fontWeight": "bold"
+				},
+				"LB_ModeArray_Arrow1": {
+					"type": "picture",
+					"top": 45,
+					"left": 280,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"sizingX": "fixed"
+				},
+				"LB_ModeSelection_Arrow1": {
+					"type": "picture",
+					"top": 45,
+					"left": 820,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomRight.png",
+					"sizingX": "fixed",
+					"visibility": "visible"
+				},
+				"LB_ModeSelection_Arrow2": {
+					"type": "picture",
+					"top": 45,
+					"left": 670,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomRight.png",
+					"sizingX": "fixed",
+					"visibility": "visible"
+				},
+				"Static Picture6": {
+					"type": "picture",
+					"top": 384,
+					"left": 273,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowUpLeft.png",
+					"sizingY": "move"
+				},
+				"Static Picture7": {
+					"type": "picture",
+					"top": 384,
+					"left": 687,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowUpLeft.png",
+					"sizingY": "move"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box7": {
+					"type": "groupBox",
+					"top": 270,
+					"left": 600,
+					"width": 300,
+					"height": 180,
+					"sizingX": "move",
+					"sizingY": "move",
+					"class": "OS_StyleSmall",
+					"text": ":xliff:InsertDelete"
+				},
+				"Group Box6": {
+					"type": "groupBox",
+					"top": 270,
+					"left": 260,
+					"width": 320,
+					"height": 180,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"class": "OS_StyleSmall",
+					"text": ":xliff:ChoiceLists"
+				},
+				"C1C2C3": {
+					"type": "listbox",
+					"top": 25,
+					"left": 260,
+					"width": 640,
+					"height": 220,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "List Box1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/C1C2C3.4dm",
+					"events": [
+						"onBeforeDataEntry"
+					],
+					"headerHeight": "21px",
+					"columns": [
+						{
+							"name": "C1",
+							"dataSource": "<>_Colors",
+							"width": 180,
+							"minWidth": 50,
+							"maxWidth": 500,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "H1",
+								"text": "C1",
+								"textAlign": "center",
+								"fontTheme": "normal"
+							},
+							"footer": {
+								"name": "Footer1",
+								"dataSource": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "C2",
+							"dataSource": "<>_Shapes",
+							"width": 180,
+							"minWidth": 50,
+							"maxWidth": 500,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "C2",
+								"dataSource": "Header3",
+								"fontTheme": "normal"
+							},
+							"footer": {
+								"name": "Footer6",
+								"dataSource": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "C3",
+							"dataSource": "<>_Material",
+							"width": 266,
+							"minWidth": 50,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "C3",
+								"dataSource": "Header4",
+								"fontTheme": "normal"
+							},
+							"footer": {
+								"name": "Footer19",
+								"dataSource": "Footer3",
+								"variableCalculation": "average",
+								"dateFormat": "abbreviated",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Popup Drop down List1": {
+					"type": "dropdown",
+					"top": 315,
+					"left": 400,
+					"width": 157,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "<>_ContentChoice",
+					"class": "Default",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Popup Drop down List2": {
+					"type": "dropdown",
+					"top": 345,
+					"left": 400,
+					"width": 87,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "<>_ColumnChoice",
+					"class": "Default",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 317,
+					"left": 275,
+					"width": 120,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:UseChoiceListColon"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 346,
+					"left": 275,
+					"width": 120,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:ToColumnColon"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 410,
+					"left": 440,
+					"width": 120,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "",
+					"text": ":xliff:Apply",
+					"class": "Default",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					],
+					"focusable": false
+				},
+				"rbAction1": {
+					"type": "radio",
+					"top": 298,
+					"left": 765,
+					"width": 113,
+					"height": 18,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "",
+					"text": ":xliff:Insert",
+					"class": "Default",
+					"stroke": "#000000",
+					"radioGroup": "Group14",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					],
+					"focusable": false
+				},
+				"rbAction2": {
+					"type": "radio",
+					"top": 319,
+					"left": 765,
+					"width": 113,
+					"height": 18,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "",
+					"text": ":xliff:Delete",
+					"class": "Default",
+					"stroke": "#000000",
+					"radioGroup": "Group14",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					],
+					"focusable": false
+				},
+				"Text21": {
+					"type": "text",
+					"top": 352,
+					"left": 625,
+					"width": 130,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:NumberOfLinesColon"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 378,
+					"left": 625,
+					"width": 130,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:AfterRowColon"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 300,
+					"left": 625,
+					"width": 130,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:ActionColon"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 352,
+					"left": 769,
+					"width": 72,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.nbLines",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Default",
+					"fill": "automatic",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 378,
+					"left": 769,
+					"width": 72,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.rowNum",
+					"stroke": "#000000",
+					"class": "Default",
+					"fill": "automatic",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 410,
+					"left": 760,
+					"width": 120,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "",
+					"text": ":xliff:Apply",
+					"class": "Default",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					],
+					"focusable": false
+				}
+			}
+		},
+		{
+			"objects": {
+				"EventsListbox": {
+					"type": "listbox",
+					"top": 100,
+					"left": 260,
+					"width": 640,
+					"height": 280,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "StylesAlbumsArtists",
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/EventsListbox.4dm",
+					"events": [
+						"onClick",
+						"onExpand",
+						"onCollapse"
+					],
+					"headerHeight": "21px",
+					"rowHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"columns": [
+						{
+							"name": "Column9",
+							"dataSource": [
+								"<>_Styles",
+								"<>_Artists",
+								"<>_Albums",
+								"<>_Tracks"
+							],
+							"width": 426,
+							"minWidth": 50,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": ":xliff:ArtistsAlbumsTracks",
+								"dataSource": "Header1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "1",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "<>_TracksCDsNums",
+							"dataSourceTypeHint": "number",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": ":xliff:CDs",
+								"dataSource": "Header5",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "8",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column11",
+							"dataSource": "<>_TracksNums",
+							"dataSourceTypeHint": "number",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": ":xliff:Tracks",
+								"dataSource": "Header5",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "7",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column13",
+							"dataSource": "<>_TracksDurations",
+							"dataSourceTypeHint": "time",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"timeFormat": "mm_ss",
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": ":xliff:Durations",
+								"dataSource": "Header5",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "TimeFooter2",
+								"dataSource": "<>TimeFooter",
+								"variableCalculation": "sum",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "<>_TracksPathes",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "     ###########################################################################################",
+							"timeFormat": "mm_ss",
+							"visibility": "hidden",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": ":xliff:Pathes",
+								"dataSource": "Header5",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "6",
+								"dataSource": "<>Sum",
+								"variableCalculation": "sum",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "<>_StylesIDs",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"dataSource": "Header5",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "2",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "<>_ArtistsIDs",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"dataSource": "Header6",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "3",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "<>_AlbumsIDs",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"dataSource": "Header7",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "4",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "<>_TracksIDs",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "5",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 411,
+					"left": 460,
+					"width": 315,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:NumberOfRecordsInTable"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 431,
+					"left": 460,
+					"width": 315,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:NumberOfRowsInListbox"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 411,
+					"left": 781,
+					"width": 120,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.nbRows1",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Default",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 431,
+					"left": 781,
+					"width": 120,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.nbRows2",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Default",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LB_ModeArray_Arrow3": {
+					"type": "picture",
+					"top": 34,
+					"left": 320,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"sizingX": "fixed"
+				},
+				"LB_ModeArray_text2": {
+					"type": "text",
+					"text": ":xliff:ListboxArrays",
+					"top": 60,
+					"left": 360,
+					"width": 211,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "bold"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 320,
+					"left": 260,
+					"width": 310,
+					"height": 115,
+					"sizingY": "move",
+					"class": "Default",
+					"text": ":xliff:HeightsColon"
+				},
+				"RowHeight": {
+					"type": "ruler",
+					"top": 371,
+					"left": 285,
+					"width": 120,
+					"height": 44,
+					"sizingY": "move",
+					"dataSource": "<>RowHeight",
+					"dataSourceTypeHint": "number",
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"min": 20,
+					"max": 60,
+					"graduationStep": 10,
+					"numberFormat": "### ##0",
+					"class": "Default",
+					"method": "ObjectMethods/RowHeight.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Unit": {
+					"type": "dropdown",
+					"top": 371,
+					"left": 420,
+					"width": 130,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "<>_Unit",
+					"class": "Default",
+					"method": "ObjectMethods/Unit.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Unit1": {
+					"type": "dropdown",
+					"top": 274,
+					"left": 430,
+					"width": 266,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "<>_ApplyTo",
+					"class": "Default",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 277,
+					"left": 275,
+					"width": 150,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:ApplyToColon"
+				},
+				"HeightDemoListBox": {
+					"type": "listbox",
+					"top": 25,
+					"left": 260,
+					"width": 640,
+					"height": 220,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "C1C2C3",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"headerHeight": "21px",
+					"scrollbarHorizontal": "hidden",
+					"columns": [
+						{
+							"name": "Column_1",
+							"dataSource": "<>_Tracks",
+							"width": 240,
+							"minWidth": 240,
+							"maxWidth": 240,
+							"enterable": false,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Head_1",
+								"text": ":xliff:Tracks",
+								"dataSource": "<>H1",
+								"textAlign": "center",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer_1",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column_2",
+							"dataSource": "<>_Artists",
+							"width": 240,
+							"minWidth": 240,
+							"maxWidth": 240,
+							"enterable": false,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Head_2",
+								"text": ":xliff:Artists",
+								"dataSource": "<>H2",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer_2",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column_3",
+							"dataSource": "<>_TracksDurations",
+							"dataSourceTypeHint": "time",
+							"width": 146,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"timeFormat": "mm_ss",
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Head_3",
+								"text": ":xliff:Durations",
+								"dataSource": "<>H3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer_3",
+								"dataSource": "<>TimeFooter",
+								"variableCalculation": "average",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 320,
+					"left": 590,
+					"width": 290,
+					"height": 115,
+					"sizingY": "move",
+					"class": "Default",
+					"text": ":xliff:AlignmentsColon"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 356,
+					"left": 601,
+					"width": 86,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:HorizontalColon"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 394,
+					"left": 601,
+					"width": 86,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:VerticalColon"
+				},
+				"Unit2": {
+					"type": "dropdown",
+					"top": 391,
+					"left": 688,
+					"width": 180,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "<>_Vposition",
+					"class": "Default",
+					"method": "ObjectMethods/Unit2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Unit3": {
+					"type": "dropdown",
+					"top": 353,
+					"left": 688,
+					"width": 180,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "<>_Hposition",
+					"class": "Default",
+					"method": "ObjectMethods/Unit3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"HeightDemoLockCols": {
+					"type": "listbox",
+					"top": 25,
+					"left": 260,
+					"width": 640,
+					"height": 270,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "HeightDemoLockCols",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"columns": [
+						{
+							"name": "P4_Col1",
+							"dataSource": "<>_Dummy1",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "C1",
+								"dataSource": "C1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer7",
+								"dataSource": "Footer7",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "P4_Col2",
+							"dataSource": "<>_Dummy2",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header16",
+								"text": "C2",
+								"dataSource": "C2",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer8",
+								"dataSource": "Footer8",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "P4_Col3",
+							"dataSource": "<>_Dummy3",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header17",
+								"text": "C3",
+								"dataSource": "C3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer9",
+								"dataSource": "Footer9",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "P4_Col4",
+							"dataSource": "<>_Dummy4",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header18",
+								"text": "C4",
+								"dataSource": "C4",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer10",
+								"dataSource": "Footer10",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "P4_Col5",
+							"dataSource": "<>_Dummy5",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header19",
+								"text": "C5",
+								"dataSource": "C5",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer11",
+								"dataSource": "Footer11",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "P4_Col6",
+							"dataSource": "<>_Dummy6",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header20",
+								"text": "C6",
+								"dataSource": "C6",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer12",
+								"dataSource": "Footer12",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "P4_Col7",
+							"dataSource": "<>_Dummy7",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header21",
+								"text": "C7",
+								"dataSource": "C7",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer13",
+								"dataSource": "Footer13",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "P4_Col8",
+							"dataSource": "<>_Dummy8",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header22",
+								"text": "C8",
+								"dataSource": "C8",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer14",
+								"dataSource": "Footer14",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "P4_Col9",
+							"dataSource": "<>_Dummy9",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header23",
+								"text": "C9",
+								"dataSource": "C9",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer15",
+								"dataSource": "Footer15",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "P4_Col10",
+							"dataSource": "<>_Dummy10",
+							"width": 80,
+							"minWidth": 40,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header24",
+								"text": "C10",
+								"dataSource": "C10",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer16",
+								"dataSource": "Footer16",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"LockedColumns": {
+					"type": "ruler",
+					"top": 384,
+					"left": 430,
+					"width": 140,
+					"height": 44,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.lockedColumns",
+					"dataSourceTypeHint": "number",
+					"showGraduations": true,
+					"labelsPlacement": "top",
+					"max": 5,
+					"graduationStep": 1,
+					"numberFormat": "### ##0",
+					"class": "Default",
+					"method": "ObjectMethods/LockedColumns.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 413,
+					"left": 260,
+					"width": 158,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:LockedColumnsColon"
+				},
+				"LockedColumns1": {
+					"type": "ruler",
+					"top": 324,
+					"left": 430,
+					"width": 140,
+					"height": 44,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.staticColumns",
+					"dataSourceTypeHint": "number",
+					"showGraduations": true,
+					"labelsPlacement": "top",
+					"max": 5,
+					"graduationStep": 1,
+					"numberFormat": "### ##0",
+					"class": "Default",
+					"method": "ObjectMethods/LockedColumns1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 353,
+					"left": 260,
+					"width": 158,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": ":xliff:StaticColumnsColon"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 352,
+					"left": 586,
+					"width": 305,
+					"height": 33,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.infoStatic",
+					"stroke": "#000000",
+					"class": "Boutons_11",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 409,
+					"left": 586,
+					"width": 305,
+					"height": 33,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.infoLocked",
+					"stroke": "#000000",
+					"class": "Boutons_11",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 627,
+					"left": 317,
+					"width": 206,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": ":xliff:Page4_TextInfos"
+				}
+			}
+		},
+		{
+			"objects": {
+				"ListboxDemoLockCells": {
+					"type": "listbox",
+					"top": 25,
+					"left": 260,
+					"width": 640,
+					"height": 300,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "List Box1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"rowFillSource": "<>RawLockColor",
+					"rowStyleSource": "<>RawLockStyle",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/ListboxDemoLockCells.4dm",
+					"events": [
+						"onBeforeDataEntry"
+					],
+					"headerHeight": "21px",
+					"columns": [
+						{
+							"name": "Column30",
+							"dataSource": "<>_Tracks",
+							"width": 220,
+							"minWidth": 50,
+							"maxWidth": 500,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "H4",
+								"text": ":xliff:Tracks",
+								"textAlign": "center",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer20",
+								"dataSource": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column31",
+							"dataSource": "<>_Artists",
+							"width": 220,
+							"minWidth": 50,
+							"maxWidth": 500,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "Header27",
+								"text": ":xliff:Artists",
+								"dataSource": "Header3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer21",
+								"dataSource": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column32",
+							"dataSource": "<>_TracksDurations",
+							"dataSourceTypeHint": "time",
+							"width": 186,
+							"minWidth": 50,
+							"maxWidth": 500,
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "Header28",
+								"text": ":xliff:Durations",
+								"dataSource": "Header4",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer22",
+								"dataSource": "Footer3",
+								"variableCalculation": "average",
+								"dateFormat": "abbreviated",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 365,
+					"left": 260,
+					"width": 640,
+					"height": 76,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.infoSuite",
+					"stroke": "#000000",
+					"class": "OS_Style",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 632,
+					"left": 389,
+					"width": 267,
+					"height": 24,
+					"dataSource": "Button",
+					"text": "Button",
+					"class": "OS_Style",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"AlertLockedRow": {
+					"type": "text",
+					"top": 340,
+					"left": 260,
+					"width": 640,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#EE0000",
+					"class": "Default",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": ":xliff:LockedRow"
+				},
+				"AlertLockedCell": {
+					"type": "text",
+					"top": 340,
+					"left": 260,
+					"width": 640,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#EE0000",
+					"class": "Default",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": ":xliff:LockedCell"
+				}
+			}
+		},
+		{
+			"objects": {
+				"LB_Styled": {
+					"type": "listbox",
+					"top": 100,
+					"left": 260,
+					"width": 640,
+					"height": 140,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "StyledArtistAlbumsTracks",
+					"movableRows": false,
+					"table": 5,
+					"scrollbarHorizontal": "hidden",
+					"stroke": "automatic",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onExpand",
+						"onCollapse"
+					],
+					"headerHeight": "21px",
+					"rowHeight": "20px",
+					"columns": [
+						{
+							"name": "Hcol5",
+							"dataSource": "[artists:3]nameStyled:4",
+							"width": 200,
+							"minWidth": 50,
+							"maxWidth": 32000,
+							"styledText": true,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HierarchicalHeader1",
+								"text": ":xliff:Artists",
+								"dataSource": "Header1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "10",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Hcol6",
+							"dataSource": "[albums:4]nameStyled:5",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header38",
+								"text": ":xliff:Albums",
+								"dataSource": "Header35",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer23",
+								"dataSource": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Hcol7",
+							"dataSource": "[tracks:5]nameStyled:2",
+							"width": 226,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header39",
+								"text": ":xliff:Tracks",
+								"dataSource": "Header36",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer24",
+								"dataSource": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"LB_Styled1": {
+					"type": "listbox",
+					"top": 310,
+					"left": 260,
+					"width": 640,
+					"height": 140,
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "array",
+					"dataSource": "StyledArtistAlbumsTracks",
+					"movableRows": false,
+					"scrollbarHorizontal": "hidden",
+					"stroke": "automatic",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onExpand",
+						"onCollapse"
+					],
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"columns": [
+						{
+							"name": "Hcol8",
+							"width": 200,
+							"minWidth": 50,
+							"maxWidth": 32000,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HierarchicalHeader2",
+								"text": ":xliff:Artists",
+								"dataSource": "Header1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "11",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"dataSource": "<>_Artists_S",
+							"styledText": true
+						},
+						{
+							"name": "Hcol9",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header48",
+								"text": ":xliff:Albums",
+								"dataSource": "Header35",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer26",
+								"dataSource": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"dataSource": "<>_Albums_S",
+							"styledText": true
+						},
+						{
+							"name": "Hcol10",
+							"width": 226,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header49",
+								"text": ":xliff:Tracks",
+								"dataSource": "Header36",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer27",
+								"dataSource": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"dataSource": "<>_Tracks_S",
+							"styledText": true
+						}
+					]
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 252,
+					"left": 310,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"sizingX": "fixed"
+				},
+				"Text24": {
+					"type": "text",
+					"text": ":xliff:ListboxArrays",
+					"top": 270,
+					"left": 360,
+					"width": 281,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "bold"
+				},
+				"LB_ModeArray_Arrow6": {
+					"type": "picture",
+					"top": 42,
+					"left": 320,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"sizingX": "fixed"
+				},
+				"LB_ModeArray_text5": {
+					"type": "text",
+					"text": ":xliff:ListboxSelection",
+					"top": 60,
+					"left": 360,
+					"width": 281,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "bold"
+				}
+			}
+		},
+		{
+			"objects": {
+				"LB_Collection": {
+					"type": "listbox",
+					"top": 100,
+					"left": 260,
+					"width": 640,
+					"height": 290,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "rightToLeft",
+					"dataSource": "Form:C1466.trackCollection",
+					"rowHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"listboxType": "collection",
+					"showFooters": true,
+					"headerHeight": "21px",
+					"footerHeight": "30px",
+					"horizontalLineStroke": "#B3F5D0",
+					"fill": "#E6FDF0",
+					"alternateFill": "#E5FDEF",
+					"method": "ObjectMethods/LB_Collection.4dm",
+					"columns": [
+						{
+							"name": "CollectionModeArtists",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"header": {
+								"name": "Header40",
+								"text": ":xliff:Artists",
+								"dataSource": "HH1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_Collection_Footer1",
+								"dataSource": "",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"verticalAlign": "middle",
+								"fill": "#BFD5F1",
+								"textAlign": "right",
+								"fontTheme": "normal",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"dataSource": "This:C1470.album.artist.name"
+						},
+						{
+							"name": "CollectionModeAlbums",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"header": {
+								"name": "Header41",
+								"text": ":xliff:Albums",
+								"dataSource": "HH2",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_Collection_Footer2",
+								"dataSource": "",
+								"stroke": "#000000",
+								"variableCalculation": "count",
+								"verticalAlign": "middle",
+								"fill": "#BFD5F1",
+								"fontTheme": "normal",
+								"fontSize": 14,
+								"dataSourceTypeHint": "number",
+								"numberFormat": "###,##0",
+								"fontWeight": "bold"
+							},
+							"dataSource": "This:C1470.album.name"
+						},
+						{
+							"name": "CollectionModeTracks",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"header": {
+								"name": "Header42",
+								"text": ":xliff:Tracks",
+								"dataSource": "HH3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_Collection_Footer3",
+								"dataSource": "",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"verticalAlign": "middle",
+								"textAlign": "right",
+								"fill": "#BBFFD8",
+								"fontTheme": "normal",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"dataSource": "This:C1470.name",
+							"method": "ObjectMethods/CollectionModeTracks.4dm"
+						},
+						{
+							"name": "CollectionModeDurations",
+							"width": 145,
+							"minWidth": 120,
+							"maxWidth": 180,
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header43",
+								"text": ":xliff:Durations",
+								"dataSource": "HH4",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_Collection_Footer4",
+								"dataSource": "",
+								"variableCalculation": "average",
+								"stroke": "#000000",
+								"verticalAlign": "middle",
+								"fill": "#BBFFD8",
+								"fontTheme": "normal",
+								"fontSize": 14,
+								"textAlign": "center",
+								"dataSourceTypeHint": "time",
+								"timeFormat": "hh_mm_ss",
+								"fontWeight": "bold"
+							},
+							"dataSource": "This:C1470.duration",
+							"resizable": false,
+							"dataSourceTypeHint": "time",
+							"method": "ObjectMethods/CollectionModeDurations.4dm"
+						}
+					]
+				},
+				"LB_ModeArray_Arrow4": {
+					"type": "picture",
+					"top": 34,
+					"left": 320,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"sizingX": "fixed"
+				},
+				"LB_ModeArray_text3": {
+					"type": "text",
+					"text": ":xliff:ListboxCollection",
+					"top": 60,
+					"left": 360,
+					"width": 311,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "bold"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 410,
+					"left": 727,
+					"width": 170,
+					"height": 32,
+					"sizingY": "move",
+					"class": "Default",
+					"text": ":xliff:ClicColumnsCalculation",
+					"fontWeight": "bold",
+					"textAlign": "right",
+					"sizingX": "move"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 384,
+					"left": 687,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowUpLeft.png",
+					"sizingY": "move",
+					"sizingX": "move"
+				},
+				"Input": {
+					"type": "input",
+					"left": 1132,
+					"top": 218,
+					"width": 165,
+					"height": 17,
+					"dataSourceTypeHint": "time"
+				}
+			}
+		},
+		{
+			"objects": {
+				"LB_Selection": {
+					"type": "listbox",
+					"top": 100,
+					"left": 260,
+					"width": 640,
+					"height": 290,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "rightToLeft",
+					"dataSource": "Form:C1466.tracks",
+					"rowHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"listboxType": "collection",
+					"showFooters": true,
+					"headerHeight": "21px",
+					"footerHeight": "30px",
+					"fill": "#FFF8EB",
+					"alternateFill": "#FFF3DC",
+					"horizontalLineStroke": "#f5deb3",
+					"selectionMode": "single",
+					"columns": [
+						{
+							"name": "ESModeArtists",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"header": {
+								"name": "Header44",
+								"text": ":xliff:Artists",
+								"dataSource": "HH1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_EntSelection_Footer1",
+								"dataSource": "",
+								"stroke": "#000000",
+								"variableCalculation": "none",
+								"dataSourceTypeHint": "text",
+								"fill": "#b1c4dd",
+								"verticalAlign": "middle",
+								"textAlign": "right",
+								"fontTheme": "normal",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"dataSource": "This:C1470.album.artist.name"
+						},
+						{
+							"name": "ESModeAlbums",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"header": {
+								"name": "Header45",
+								"text": ":xliff:Albums",
+								"dataSource": "HH2",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_EntSelection_Footer2",
+								"dataSource": "",
+								"stroke": "#000000",
+								"variableCalculation": "count",
+								"fill": "#b1c4dd",
+								"verticalAlign": "middle",
+								"fontTheme": "normal",
+								"fontSize": 14,
+								"dataSourceTypeHint": "number",
+								"numberFormat": "###,##0",
+								"fontWeight": "bold"
+							},
+							"dataSource": "This:C1470.album.name"
+						},
+						{
+							"name": "ESModeTracks",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 400,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onFooterClick"
+							],
+							"header": {
+								"name": "Header46",
+								"text": ":xliff:Tracks",
+								"dataSource": "HH3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_EntSelection_Footer3",
+								"dataSource": "",
+								"stroke": "#000000",
+								"variableCalculation": "none",
+								"fill": "#f5deb3",
+								"verticalAlign": "middle",
+								"textAlign": "right",
+								"fontTheme": "normal",
+								"fontSize": 14,
+								"dataSourceTypeHint": "text",
+								"fontWeight": "bold"
+							},
+							"dataSource": "This:C1470.name",
+							"method": "ObjectMethods/ESModeTracks.4dm"
+						},
+						{
+							"name": "ESModeDurations",
+							"width": 145,
+							"minWidth": 120,
+							"maxWidth": 180,
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header47",
+								"text": ":xliff:Durations",
+								"dataSource": "HH4",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "LB_EntSelection_Footer4",
+								"dataSource": "",
+								"variableCalculation": "average",
+								"stroke": "#000000",
+								"fill": "#f5deb3",
+								"verticalAlign": "middle",
+								"fontTheme": "normal",
+								"fontSize": 14,
+								"textAlign": "center",
+								"dataSourceTypeHint": "time",
+								"timeFormat": "hh_mm_ss",
+								"fontWeight": "bold"
+							},
+							"dataSource": "This:C1470.duration",
+							"resizable": false,
+							"dataSourceTypeHint": "time",
+							"enterable": false
+						}
+					]
+				},
+				"LB_ModeArray_Arrow5": {
+					"type": "picture",
+					"top": 34,
+					"left": 320,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"sizingX": "fixed"
+				},
+				"LB_ModeArray_text4": {
+					"type": "text",
+					"text": ":xliff:ListboxEntitySelection",
+					"top": 60,
+					"left": 360,
+					"width": 321,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "bold"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 410,
+					"left": 727,
+					"width": 170,
+					"height": 32,
+					"sizingY": "move",
+					"class": "Default",
+					"text": ":xliff:ClicColumnsCalculation",
+					"fontWeight": "bold",
+					"textAlign": "right",
+					"sizingX": "move"
+				},
+				"Static Picture3": {
+					"type": "picture",
+					"top": 384,
+					"left": 687,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowUpLeft.png",
+					"sizingY": "move",
+					"sizingX": "move"
+				}
+			}
+		},
+		{
+			"objects": {}
+		},
+		null,
+		null,
+		null
+	],
+	"editor": {
+		"activeView": "Vue 1",
+		"defaultView": "Vue 1",
+		"views": {
+			"Vue 1": {},
+			"Vue 2": {
+				"objects": [
+					"LB_ModeSelection"
+				]
+			},
+			"Vue 3": {},
+			"Vue 4": {},
+			"Vue 5": {},
+			"Vue 6": {},
+			"Vue 7": {},
+			"Vue 8": {},
+			"Vue 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 1498
+}

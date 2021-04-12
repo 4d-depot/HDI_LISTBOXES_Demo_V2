@@ -1,0 +1,105 @@
+﻿{
+	"bars": [
+		{
+			"id": 1,
+			"name": "MainBar",
+			"items": [
+				{
+					"link": 1102
+				},
+				{
+					"link": 15446
+				},
+				{
+					"link": 7190
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 1102,
+			"title": ":xliff:menu_file",
+			"items": [
+				{
+					"title": ":xliff:MenusDemo_CloseWindow",
+					"method": "M_CloseWindow",
+					"shortcutAccel": true,
+					"shortcutKey": "W"
+				},
+				{
+					"title": ":xliff:MenuDemo_4Dpictures",
+					"method": "M_Listboxes",
+					"shortcutAccel": true,
+					"shortcutKey": "K"
+				},
+				{
+					"title": ":xliff:menu_quit",
+					"method": "M_QUIT",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 15446,
+			"title": ":xliff:menu_edit",
+			"items": [
+				{
+					"title": ":xliff:menu_undo",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": ":xliff:menu_cut",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"action": "cut"
+				},
+				{
+					"title": ":xliff:menu_copy",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"action": "copy"
+				},
+				{
+					"title": ":xliff:menu_paste",
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"action": "paste"
+				},
+				{
+					"title": ":xliff:menu_clear",
+					"action": "clear"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:menu_selectAll",
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"action": "selectAll"
+				}
+			]
+		},
+		{
+			"link": 7190,
+			"title": ":xliff:menu_mode",
+			"items": [
+				{
+					"title": ":xliff:Menu_ReturnToDesignMode",
+					"action": "design"
+				}
+			]
+		}
+	]
+}

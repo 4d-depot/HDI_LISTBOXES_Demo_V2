@@ -1,0 +1,18 @@
+﻿{
+	"Formulaires": {},
+	"Groupe par défaut": {
+		"groups": [
+			"Formulaires",
+			"Méthodes projet",
+			"Tables"
+		]
+	},
+	"Méthodes projet": {
+		"methods": [
+			"M_Listboxes",
+			"On_Open"
+		]
+	},
+	"Tables": {},
+	"trash": {}
+}

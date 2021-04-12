@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_Listboxes_Demo" uuid="52C5145F979147E59C567AB1205B8E55" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="styles" uuid="BFFC698E30A84292B82571E08EB54F3E" id="2">
+		<field name="ID" uuid="0CB07DED587240F09C87E1B128824238" type="4" unique="true" id="1"/>
+		<field name="styleName" uuid="D21733AEDDAE472A822C997FCC0E56CE" type="10" id="2"/>
+		<primary_key field_name="ID" field_uuid="0CB07DED587240F09C87E1B128824238"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="1" displayable_fields_count="2">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="45.828125" top="83.5546875" width="113" height="103.45703125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="artists" uuid="1786E38C83CD4B7FB9CDB58B3CF44AE2" id="3">
+		<field name="ID" uuid="3CBCD16AC5C041F2955042A5FB275E95" type="4" unique="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="name" uuid="D7C9202BE51D4345B766B5EDED140D79" type="10" id="2">
+			<field_extra position="3"/>
+		</field>
+		<field name="styleID" uuid="3FCAB35428564EB7808E2D6314CCB1CB" type="4" id="3">
+			<field_extra position="2"/>
+		</field>
+		<field name="nameStyled" uuid="B1206F33D4DA4D43B0BF40E468F06952" type="10" never_null="true" id="4">
+			<field_extra position="4"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="3CBCD16AC5C041F2955042A5FB275E95"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="4">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="209.61328125" top="62.1640625" width="127" height="125.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="albums" uuid="FC5F74C91DE4468ABAE9253E715513F0" id="4">
+		<field name="ID" uuid="238CA72F291B4AD4AD8DCD94AB9B55A5" type="4" unique="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="name" uuid="400887C8A88A4BE79D084198936BF224" type="10" limiting_length="80" id="2">
+			<field_extra position="3"/>
+		</field>
+		<field name="artistID" uuid="44EA417CFCF14B3480F62DA302A5C8DD" type="4" id="3">
+			<field_extra position="2"/>
+		</field>
+		<field name="available" uuid="BDDAE7994E3940CF83A76F6771BB69C0" type="1" id="4">
+			<field_extra position="4"/>
+		</field>
+		<field name="nameStyled" uuid="ED7BCA055FB54F51BBD3D42B9DBCBF1F" type="10" limiting_length="255" never_null="true" id="5">
+			<field_extra position="5"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="238CA72F291B4AD4AD8DCD94AB9B55A5"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="5">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="391.484375" top="41.26171875" width="134" height="153.046875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="tracks" uuid="E444CD18F1E44DDA92C25B5F61349B07" id="5">
+		<field name="name" uuid="7CDC9042F0BD4E19A142DA68233277C8" type="10" limiting_length="80" id="1">
+			<field_extra position="3"/>
+		</field>
+		<field name="nameStyled" uuid="EBA2E5F817434508AD07603E79300009" type="10" limiting_length="255" never_null="true" id="2">
+			<field_extra position="4"/>
+		</field>
+		<field name="number" uuid="015AA03910114E458B229138AB69C381" type="4" id="5">
+			<field_extra position="5"/>
+		</field>
+		<field name="filePath" uuid="7E2D5142F72E43D481992B13519D1ECA" type="10" id="6">
+			<field_extra position="7"/>
+		</field>
+		<field name="fileName" uuid="7F06EA6E523F4453B1D7F6AE14692524" type="10" limiting_length="80" id="7">
+			<field_extra position="8"/>
+		</field>
+		<field name="lastUpdate" uuid="F27BDF830B4140C19958A527607B1AA6" type="8" id="8">
+			<field_extra position="9"/>
+		</field>
+		<field name="fileSize" uuid="4732B762234349B7A625384F84E15EDD" type="4" id="9">
+			<field_extra position="10"/>
+		</field>
+		<field name="duration" uuid="822C93331E4E4816B0E891DDA27C85B4" type="9" id="10">
+			<field_extra position="11"/>
+		</field>
+		<field name="updated" uuid="18EF9FBE1040437A9A5A2675DEE8405A" type="1" id="11">
+			<field_extra position="12"/>
+		</field>
+		<field name="badPath" uuid="D3D4488E90514D97AA79E6D9D7989CCE" type="1" id="12">
+			<field_extra position="13"/>
+		</field>
+		<field name="comments" uuid="7E129F54C22D4283A567C0FB5AC20D38" type="14" id="13" outside_blob="true">
+			<field_extra position="14"/>
+		</field>
+		<field name="count" uuid="895381ACC88940AAA0BE19E7EBC4F1C2" type="4" id="14">
+			<field_extra position="6"/>
+		</field>
+		<field name="cdNumber" uuid="1771A212675C4EA4A8E50226CC3F4899" type="4" id="15">
+			<field_extra position="15"/>
+		</field>
+		<field name="cdCount" uuid="57D1CC20C81C4C64ABDB1E4887EB91A3" type="4" id="16">
+			<field_extra position="16"/>
+		</field>
+		<field name="live" uuid="DB84C98B0A794117B5626F06D98980FA" type="1" id="17">
+			<field_extra position="17"/>
+		</field>
+		<field name="ID" uuid="BE43C82F98DB49F3A36F9199025B9200" type="4" unique="true" id="18">
+			<field_extra position="1"/>
+		</field>
+		<field name="albumID" uuid="2308039E2B454BDDAE8EEFEEDFBD4392" type="4" id="19">
+			<field_extra position="2"/>
+		</field>
+		<field name="encodingInfo" uuid="245BD86DD6574C8ABD6D6C7FADE2F2C2" type="10" limiting_length="80" id="20">
+			<field_extra position="18"/>
+		</field>
+		<field name="status" uuid="C74733E43ACE45C3AE81E72029B71264" type="10" limiting_length="80" id="21">
+			<field_extra position="19"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="BE43C82F98DB49F3A36F9199025B9200"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="19">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="596.31640625" top="20.3671875" width="129" height="440.48046875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="B27549D8AD30426C8A560CB2DF4AA027" name_Nto1="artist" name_1toN="albums" auto_load_Nto1="true" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="44EA417CFCF14B3480F62DA302A5C8DD" name="artistID">
+				<table_ref uuid="FC5F74C91DE4468ABAE9253E715513F0" name="albums"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3CBCD16AC5C041F2955042A5FB275E95" name="ID">
+				<table_ref uuid="1786E38C83CD4B7FB9CDB58B3CF44AE2" name="artists"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="CD55C3C57668457DB6D4944AF3F79175" name_Nto1="style" name_1toN="artists" auto_load_Nto1="true" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="3FCAB35428564EB7808E2D6314CCB1CB" name="styleID">
+				<table_ref uuid="1786E38C83CD4B7FB9CDB58B3CF44AE2" name="artists"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="0CB07DED587240F09C87E1B128824238" name="ID">
+				<table_ref uuid="BFFC698E30A84292B82571E08EB54F3E" name="styles"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="A5CFAA909FF2467282E27C11B6C8835E" name_Nto1="album" name_1toN="tracks" auto_load_Nto1="true" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="2308039E2B454BDDAE8EEFEEDFBD4392" name="albumID">
+				<table_ref uuid="E444CD18F1E44DDA92C25B5F61349B07" name="tracks"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="238CA72F291B4AD4AD8DCD94AB9B55A5" name="ID">
+				<table_ref uuid="FC5F74C91DE4468ABAE9253E715513F0" name="albums"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="039F098E9717407E94284DC5600B2CD6" type="1">
+		<field_ref uuid="238CA72F291B4AD4AD8DCD94AB9B55A5" name="ID">
+			<table_ref uuid="FC5F74C91DE4468ABAE9253E715513F0" name="albums"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="0CE6793140E9470790F28A7A6FFFCE66" type="7">
+		<field_ref uuid="0CB07DED587240F09C87E1B128824238" name="ID">
+			<table_ref uuid="BFFC698E30A84292B82571E08EB54F3E" name="styles"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="45FC6BCE87AE4DAD8DB38B492815D086" type="3">
+		<field_ref uuid="2308039E2B454BDDAE8EEFEEDFBD4392" name="albumID">
+			<table_ref uuid="E444CD18F1E44DDA92C25B5F61349B07" name="tracks"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="511F3AB4793047F7A0BA35CD22FC3B75" type="3">
+		<field_ref uuid="3FCAB35428564EB7808E2D6314CCB1CB" name="styleID">
+			<table_ref uuid="1786E38C83CD4B7FB9CDB58B3CF44AE2" name="artists"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_4" uuid="94E660FF117447ACBA43821E2006F6E9" type="7">
+		<field_ref uuid="BE43C82F98DB49F3A36F9199025B9200" name="ID">
+			<table_ref uuid="E444CD18F1E44DDA92C25B5F61349B07" name="tracks"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A3AD7EE1624A4F8F9D90A6F5A39E4D67" type="3">
+		<field_ref uuid="44EA417CFCF14B3480F62DA302A5C8DD" name="artistID">
+			<table_ref uuid="FC5F74C91DE4468ABAE9253E715513F0" name="albums"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B20CAF50C5DF4E6B8C6F7E1D8283E279" type="7">
+		<field_ref uuid="3CBCD16AC5C041F2955042A5FB275E95" name="ID">
+			<table_ref uuid="1786E38C83CD4B7FB9CDB58B3CF44AE2" name="artists"/>
+		</field_ref>
+	</index>
+	<base_extra data_file_path=":4D Listboxes.4DD" package_name="4D Listboxes" structure_file_name="4D Listboxes" is_compiled_database="true" ppc_code_stamp="91" __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+		<temp_folder folder_selector="data"/>
+	</base_extra>
+</base>
