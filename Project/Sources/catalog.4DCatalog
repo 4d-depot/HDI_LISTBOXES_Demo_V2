@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="HDI_Listboxes_Demo" uuid="52C5145F979147E59C567AB1205B8E55" collation_locale="fr">
+<base name="HDI_LISTBOXES_Demo_V2" uuid="52C5145F979147E59C567AB1205B8E55" collation_locale="fr">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="styles" uuid="BFFC698E30A84292B82571E08EB54F3E" id="2">
 		<field name="ID" uuid="0CB07DED587240F09C87E1B128824238" type="4" unique="true" id="1"/>

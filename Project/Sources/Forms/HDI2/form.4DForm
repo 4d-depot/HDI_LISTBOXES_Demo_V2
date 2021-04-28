@@ -1107,149 +1107,6 @@
 						"onPrintingDetail"
 					]
 				},
-				"LB_Hierachical": {
-					"type": "listbox",
-					"top": 100,
-					"left": 290,
-					"width": 590,
-					"height": 320,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"resizingMode": "legacy",
-					"dataSource": "StylesAlbumsArtists",
-					"rowHeightAutoMin": "20px",
-					"rowHeightAutoMax": "20px",
-					"scrollbarHorizontal": "hidden",
-					"stroke": "#000000",
-					"fontFamily": "Lucida Grande",
-					"fontSize": 12,
-					"events": [
-						"onClick",
-						"onExpand",
-						"onCollapse"
-					],
-					"rowHeight": "20px",
-					"headerHeight": "21px",
-					"columns": [
-						{
-							"name": "Hcol1",
-							"dataSource": "<>_Artists",
-							"width": 160,
-							"minWidth": 50,
-							"maxWidth": 32000,
-							"enterable": false,
-							"fontFamily": "Lucida Grande",
-							"fontSize": 13,
-							"events": [
-								"onClick",
-								"onDataChange"
-							],
-							"header": {
-								"name": "HierarchicalHeader",
-								"text": ":xliff:Artists",
-								"dataSource": "Header1",
-								"fontFamily": "Lucida Grande",
-								"fontSize": 11
-							},
-							"footer": {
-								"name": "9",
-								"dataSource": "<>Dummy",
-								"timeFormat": "hh_mm_ss",
-								"stroke": "#000000",
-								"fontFamily": "Lucida Grande",
-								"fontSize": 12
-							}
-						},
-						{
-							"name": "Hcol2",
-							"dataSource": "<>_Albums",
-							"width": 160,
-							"minWidth": 10,
-							"maxWidth": 32000,
-							"fontFamily": "Lucida Grande",
-							"fontSize": 13,
-							"events": [
-								"onClick",
-								"onDataChange"
-							],
-							"header": {
-								"name": "Header35",
-								"text": ":xliff:Albums",
-								"dataSource": "Header35",
-								"fontFamily": "Lucida Grande",
-								"fontSize": 11
-							},
-							"footer": {
-								"name": "Footer3",
-								"dataSource": "Footer3",
-								"timeFormat": "hh_mm_ss",
-								"stroke": "#000000",
-								"fill": "#000000",
-								"fontFamily": "Lucida Grande",
-								"fontSize": 12
-							}
-						},
-						{
-							"name": "Hcol3",
-							"dataSource": "<>_Tracks",
-							"width": 160,
-							"minWidth": 10,
-							"maxWidth": 32000,
-							"fontFamily": "Lucida Grande",
-							"fontSize": 13,
-							"events": [
-								"onClick",
-								"onDataChange"
-							],
-							"header": {
-								"name": "Header36",
-								"text": ":xliff:Tracks",
-								"dataSource": "Header36",
-								"fontFamily": "Lucida Grande",
-								"fontSize": 11
-							},
-							"footer": {
-								"name": "Footer4",
-								"dataSource": "Footer4",
-								"timeFormat": "hh_mm_ss",
-								"stroke": "#000000",
-								"fill": "#000000",
-								"fontFamily": "Lucida Grande",
-								"fontSize": 12
-							}
-						},
-						{
-							"name": "Hcol4",
-							"dataSource": "<>_TracksDurations",
-							"dataSourceTypeHint": "time",
-							"width": 100,
-							"minWidth": 50,
-							"maxWidth": 10000,
-							"fontFamily": "Lucida Grande",
-							"fontSize": 13,
-							"events": [
-								"onClick",
-								"onDataChange"
-							],
-							"header": {
-								"name": "Header37",
-								"text": ":xliff:Durations",
-								"dataSource": "Header37",
-								"fontFamily": "Lucida Grande",
-								"fontSize": 11
-							},
-							"footer": {
-								"name": "Footer5",
-								"dataSource": "Footer5",
-								"timeFormat": "hh_mm_ss",
-								"stroke": "#000000",
-								"fill": "#000000",
-								"fontFamily": "Lucida Grande",
-								"fontSize": 12
-							}
-						}
-					]
-				},
 				"Text28": {
 					"type": "text",
 					"text": ":xliff:MandatoryForHierachical",
@@ -1279,6 +1136,150 @@
 					"height": 16,
 					"textAlign": "left",
 					"fontWeight": "bold"
+				},
+				"LB_Hierachical": {
+					"type": "listbox",
+					"top": 100,
+					"left": 290,
+					"width": 590,
+					"height": 320,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "StylesAlbumsArtists",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onExpand",
+						"onCollapse"
+					],
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"method": "ObjectMethods/LB_Hierachical.4dm",
+					"columns": [
+						{
+							"name": "Hcol11",
+							"dataSource": "<>_Artists",
+							"width": 160,
+							"minWidth": 50,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HierarchicalHeader3",
+								"text": ":xliff:Artists",
+								"dataSource": "Header1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "12",
+								"dataSource": "<>Dummy",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Hcol12",
+							"dataSource": "<>_Albums",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header31",
+								"text": ":xliff:Albums",
+								"dataSource": "Header35",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer25",
+								"dataSource": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Hcol13",
+							"dataSource": "<>_Tracks",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header51",
+								"text": ":xliff:Tracks",
+								"dataSource": "Header36",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer29",
+								"dataSource": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Hcol14",
+							"dataSource": "<>_TracksDurations",
+							"dataSourceTypeHint": "time",
+							"width": 100,
+							"minWidth": 50,
+							"maxWidth": 10000,
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header52",
+								"text": ":xliff:Durations",
+								"dataSource": "Header37",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer30",
+								"dataSource": "Footer5",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
 				}
 			}
 		},
@@ -3900,5 +3901,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1498
+	"geometryStamp": 1507
 }
